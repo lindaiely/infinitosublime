@@ -1,0 +1,157 @@
+*{
+	box-sizing: border-box;
+}
+body, html{
+	font-family: 'Rubik', sans-serif;
+}
+.container{
+	display: grid;
+	grid-template:  "topo topo" 80px
+					"promo promo" 200px
+					"menu menu" 70px
+					"arealogin arealogin"
+					"produtos feed" 1fr
+					"news news"
+					"rodape rodape" 400px / 1fr 350px;
+	grid-auto-rows: auto;
+	grid-gap: 2px;
+}
+header{
+	grid-area: topo;
+	background-color: #1E2335;
+	display: flex;
+}
+header h1{
+	margin: 30px;
+}
+header h1 a{
+	text-decoration: none;
+	color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+}
+header h1 a:hover{
+	text-decoration: none;
+	color: #1E2335;
+	background-color: rgba(255, 255, 255, 0.938);
+}
+header input{
+	padding: 8px 10px;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+}
+.topo .buscar{
+	display: flex;
+	margin: auto 25px;
+}
+.topo .right{
+	display: flex;
+	margin: auto 45px;
+	padding: 0px 0px 0px 38rem;
+}
+.topo a{
+	text-decoration: none;
+	color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+}
+.topo a:hover{
+	text-decoration: none;
+	color: #1E2335;
+	background-color: rgba(255, 255, 255, 0.938);
+}
+article{
+	grid-area: promo;
+	background-color: #E25345;
+}
+nav{
+	grid-area: menu;
+	background-color: #83B0B5;
+	display: flex;
+	justify-content: center;
+}
+.menu ul li{
+	display: inline;
+	position: relative;
+	top: 40%;
+	margin: 0 20px;
+}
+.menu ul li a{
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.938);
+	padding: 10px;
+	border-radius: 8px;
+}
+.menu ul li a:hover{
+	color: #83B0B5;
+	background-color: rgba(255, 255, 255, 0.938);
+}
+.container-produtos{
+	grid-area: produtos;
+	background-color: #E6DFC5;
+}
+aside{
+	grid-area: feed;
+	background-color: #83B0B5;
+	width: 100%;
+}
+.card{
+	padding: 10px;
+}
+.card h2{
+	margin: 15px auto;
+}
+.card .imagem-feed{
+	width: 100%;
+}
+#news{
+	grid-area: news;
+	padding: 20px;
+	background-color: #E25345;
+}
+#news p{
+	font-size: 18px;
+}
+#news form{
+	display: flex;
+}
+#news form > *{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 5px 8px;
+    margin: 0 10px;
+	border-radius: 8px;
+}
+footer{
+	grid-area: rodape;
+	background-color: #1E2335;
+}
+.rodape{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}
+.rodape p{
+	margin-top: 35px;
+	margin-bottom: 20px;
+	color: #E6DFC5;
+}
+.rodape ul li{
+	margin: 10px 0;
+}
+.rodape ul li a{
+	text-decoration: none;
+	color: #E6DFC5;
+}
+.redes ul li{
+	display: inline;
+	margin: 3px;
+	font-size: 2rem;
+}
+.subrodape p{
+	display: flex;
+	flex-wrap: wrap;
+	border-top: 1px solid #E6DFC5;
+}
