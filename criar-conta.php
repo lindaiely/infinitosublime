@@ -70,9 +70,8 @@
         color: #1E2335;
         background-color: rgba(255, 255, 255, 0.938);
     }
-	nav{
+	.criarconta{
 		grid-area: criarconta;
-		width: 100%;
 		background-color: #83B0B5;
 		margin: 2rem auto;
         padding: 3.5rem 6rem;
@@ -80,8 +79,73 @@
         flex-direction: column;
         flex-wrap: wrap;
         border-radius: 0.8rem;
+        width: 40%;
 	}
-
+	.criarconta h2{
+		font-size: 1.6rem;
+        color: #E6DFC5;
+        margin: 0 auto 1rem auto;
+        text-align: center;
+	}
+	.criarconta form{
+		display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex: 1;
+	}
+	.criarconta input{
+		border-radius: 0.3rem;
+        border: none;
+        outline: none;
+        background-color: #1E2335;
+        color: #E6DFC5;
+        margin: 0.5rem 4.5rem 1.5rem auto;
+        padding: 1rem 4rem 1rem 1.2rem;
+	}
+	#nome, #login, #senha, #confsenha{
+		width: 100%;
+	}
+    .btn{
+        margin: 0.5rem 0 1.5rem;
+        padding: 1rem;
+        border: none;
+        outline: none;
+        color: #E6DFC5;
+        border-radius: 0.3rem;
+    }
+    button{
+        cursor: pointer;
+    }
+    .btn-danger{
+        background-color: #E25345;
+    }
+    .auxiliar input[type="checkbox"]{
+        margin: 0;
+        padding: 0;
+    }
+    .auxiliar{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: auto;
+    }
+    .auxiliar a{
+        color: #E6DFC5;
+        text-decoration: none;
+    }
+    .auxiliar p{
+        text-decoration: none;
+        margin: 10px auto 5px auto;
+    }
+    .auxiliar #aux{
+        margin: 0;
+    }
+    .input-wrapper{
+        position: relative;
+        color: #E6DFC5;
+        font-weight: bold;
+        font-family: "Font Awesome 5 free";
+    }
 	footer{
         grid-area: rodape;
         width: 100%;
@@ -138,18 +202,17 @@
 					<div class="input-wrapper input-senha">
 						<input type="password" name="senha" id="senha" placeholder="Senha">
 					</div>
-					<div class="input-wrapper input-senha">
-						<input type="password" name="senha" id="senha" placeholder="Confirme sua senha">
+					<div class="input-wrapper input-confsenha">
+						<input type="password" name="confsenha" id="confsenha" placeholder="Confirme sua senha">
 					</div>
 					<div class="auxiliar">
-                    <label for="aux">
-                        <input type="checkbox" name="aux" id="aux">
-                        Gostaria de receber promoções, noticias e novidades sobre a loja
-                    </label>
-					<p>Ao criar sua conta, você concorda com os nossos <a href="">Termos de uso</a> e com a <a href="">Politica de privacidade</a>.</p>
-                </div>
-                <button class="btn btn-danger">Criar conta</button>
-				<p>Já tem uma conta? <a href="login.php">Login</a> </p>
+                        <label for="">
+                            <p><input type="checkbox">&nbsp; Gostaria de receber promoções, noticias e novidades sobre a loja</p>
+                        </label>
+                        <p>Ao criar sua conta, você concorda com os nossos <a href="">Termos de uso</a> e com a <a href="">Politica de privacidade</a></p>
+                        <button class="btn btn-danger">Criar conta</button>
+                        <p id="aux">Já tem uma conta? <a href="login.php">Login</a> </p>
+                    </div>
             </form>
 		</nav>
 		<footer class="rodape">

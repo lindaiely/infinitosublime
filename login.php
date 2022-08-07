@@ -99,7 +99,7 @@
         outline: none;
         background-color: #1E2335;
         color: #E6DFC5;
-        margin: 0.5rem 2.5rem 1.5rem auto;
+        margin: 0.5rem 4.5rem 1.5rem auto;
         padding: 1rem 4rem 1rem 2.5rem;
     }
     #login, #senha{
