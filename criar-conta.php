@@ -22,7 +22,7 @@
         background-color: #E6DFC5;
         grid-template:  "topo" 80px
 					    "criarconta" 1fr
-					    "rodape" auto;
+					    "rodape" 400px / auto;
         grid-auto-rows: auto;
     }
     header{
@@ -153,6 +153,7 @@
     }
     .rodape{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
     }
     .rodape p{
@@ -172,10 +173,13 @@
         margin: 3px;
         font-size: 2rem;
     }
-    .subrodape p{
+    .break{
+        flex-basis: 100%;
+        height: 0;
+    }
+    .subrodape{
         display: flex;
-        flex-wrap: wrap;
-        border-top: 1px solid #E6DFC5;
+        justify-content: center;
     }
 	</style>
 	<div class="container">
@@ -210,8 +214,8 @@
                             <p><input type="checkbox">&nbsp; Gostaria de receber promoções, noticias e novidades sobre a loja</p>
                         </label>
                         <p>Ao criar sua conta, você concorda com os nossos <a href="">Termos de uso</a> e com a <a href="">Politica de privacidade</a></p>
-                        <button class="btn btn-danger">Criar conta</button>
-                        <p id="aux">Já tem uma conta? <a href="login.php">Login</a> </p>
+                        <button class="btn btn-danger"><a href="perfil.php">Criar conta</a></button>
+                        <p id="aux">Já tem uma conta? <a href="login.php">Login</a></p>
                     </div>
             </form>
 		</nav>
@@ -248,7 +252,7 @@
 					<li><a href="" target="_blank" rel="external"><i class="fa-brands fa-square-whatsapp"></i></a></li>
 				</ul>
 			</div>
-            <div class="subrodape">
+            <div class="break subrodape">
 			    <p>&copy; Todos os direitos reservados - 2022</p>
 		    </div>
 		</footer>

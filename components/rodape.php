@@ -1,5 +1,5 @@
 
-<section id="news">
+		<section id="news">
             <form action="" class="cadastro">
 				<p>CADASTRE-SE E RECEBA NOSSAS NOVIDADES</p>
 				<input type="nome" name="nome" id="nome" placeholder="Nome">
@@ -40,7 +40,7 @@
 					<li><a href="" target="_blank" rel="external"><i class="fa-brands fa-square-whatsapp"></i></a></li>
 				</ul>
 			</div>
-			<div class="subrodape">
+			<div class="break subrodape">
 				<p>&copy; Todos os direitos reservados - 2022</p>
 			</div>
 		</footer>

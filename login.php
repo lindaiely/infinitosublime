@@ -23,7 +23,7 @@
         grid-template:  "topo" 80px
 					    "arealogin" 1fr
                         "news"
-					    "rodape" auto;
+					    "rodape" 400px / auto;
         grid-auto-rows: auto;
     }
     header{
@@ -172,6 +172,7 @@
     }
     .rodape{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
     }
     .rodape p{
@@ -191,10 +192,13 @@
         margin: 3px;
         font-size: 2rem;
     }
-    .subrodape p{
+    .break{
+        flex-basis: 100%;
+        height: 0;
+    }
+    .subrodape{
         display: flex;
-        flex-wrap: wrap;
-        border-top: 1px solid #E6DFC5;
+        justify-content: center;
     }
 </style>
     <div class="container">
@@ -266,7 +270,7 @@
 					<li><a href="" target="_blank" rel="external"><i class="fa-brands fa-square-whatsapp"></i></a></li>
 				</ul>
 			</div>
-            <div class="subrodape">
+            <div class="break subrodape">
 			    <p>&copy; Todos os direitos reservados - 2022</p>
 		    </div>
 		</footer>
