@@ -6,7 +6,7 @@
 		<nav class="menu">
 			<ul>
 				<li><a href="">TEMAS</a></li>
-				<li><a href="">CAMISAS</a></li>
+				<li><a href="produtos/camisas.php">CAMISAS</a></li>
 				<li><a href="">CANECAS</a></li>
 				<li><a href="">QUADROS</a></li>
 			</ul>
@@ -313,6 +313,35 @@
 						</div>
 					</div>
 				</div>
+				<!-- 
+				<div class="pag-seguinte">
+					<ul>
+						<li>
+							<a href="">1</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="">2</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="">3</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="">4</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="">5</a>
+						</li>
+					</ul>
+				</div>
+--->
 			</section>
 		</div>
 		<aside class="feed">

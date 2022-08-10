@@ -70,10 +70,6 @@ nav{
 	display: flex;
 	justify-content: center;
 }
-.container-sessao-produtos{
-	display: flex;
-	flex-wrap: wrap;
-}
 .menu ul li{
 	display: inline;
 	position: relative;
@@ -89,6 +85,10 @@ nav{
 .menu ul li a:hover{
 	color: #83B0B5;
 	background-color: rgba(255, 255, 255, 0.938);
+}
+.container-sessao-produtos{
+	display: flex;
+	flex-wrap: wrap;
 }
 .container-produtos{
 	grid-area: produtos;
