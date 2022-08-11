@@ -7,7 +7,7 @@
 			<ul>
 				<li><a href="">TEMAS</a></li>
 				<li><a href="produtos/camisas.php">CAMISAS</a></li>
-				<li><a href="">CANECAS</a></li>
+				<li><a href="produtos/canecas.php">CANECAS</a></li>
 				<li><a href="">QUADROS</a></li>
 			</ul>
 		</nav>
@@ -24,22 +24,6 @@
 			</div>
 			<section class="sessao-produtos">
 				<div class="container-sessao-produtos">
-					<div class="card-thumb">
-						<a href="">
-							<img src="img/caneca25-dc.jpg" id="card-img" alt="">
-						</a>
-						<div class="card-thumb-info">
-							<a href="">Batman</a>
-							<div class="card-thumb-detalhes">
-								<div class="card-thumb-precos">
-									<span>R$ 39,90</span>
-								</div>
-								<div class="card-thumb-parcial-precos">
-									ou 3x R$ 9,90 sem juros
-								</div>
-							</div>
-						</div>
-					</div>
 					<div class="card-thumb">
 						<a href="">
 							<img src="img/caneca26-marvel.jpg" id="card-img" alt="">
@@ -202,22 +186,6 @@
 					</div>
 					<div class="card-thumb">
 						<a href="">
-							<img src="img/caneca36-lgbt.jpg" id="card-img" alt="">
-						</a>
-						<div class="card-thumb-info">
-							<a href="">Orgulho</a>
-							<div class="card-thumb-detalhes">
-								<div class="card-thumb-precos">
-									<span>R$ 39,90</span>
-								</div>
-								<div class="card-thumb-parcial-precos">
-									ou 3x R$ 9,90 sem juros
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="card-thumb">
-						<a href="">
 							<img src="img/caneca37-lgbt.jpg" id="card-img" alt="">
 						</a>
 						<div class="card-thumb-info">
@@ -270,22 +238,6 @@
 						</a>
 						<div class="card-thumb-info">
 							<a href="">Trans is beautiful</a>
-							<div class="card-thumb-detalhes">
-								<div class="card-thumb-precos">
-									<span>R$ 39,90</span>
-								</div>
-								<div class="card-thumb-parcial-precos">
-									ou 3x R$ 9,90 sem juros
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="card-thumb">
-						<a href="">
-							<img src="img/caneca41-lgbt.jpg" id="card-img" alt="">
-						</a>
-						<div class="card-thumb-info">
-							<a href="">O amor é lindo demais!</a>
 							<div class="card-thumb-detalhes">
 								<div class="card-thumb-precos">
 									<span>R$ 39,90</span>

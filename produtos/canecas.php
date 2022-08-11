@@ -23,7 +23,7 @@
         grid-template:  "topo" 80px
 						"promo" 200px
 						"menu" 70px
-					    "areacamisas" 1fr
+					    "areacanecas" 1fr
                         "news"
 					    "rodape" 400px / auto;
         grid-auto-rows: auto;
@@ -99,8 +99,8 @@
 		color: #83B0B5;
 		background-color: rgba(255, 255, 255, 0.938);
 	}
-	.areacamisas{
-		grid-area: areacamisas;
+	.areacanecas{
+		grid-area: areacanecas;
 		background-color: #E6DFC5;
 	}
 	.container-sessao-produtos{
@@ -228,15 +228,15 @@
 				<li><a href="">QUADROS</a></li>
 			</ul>
 		</nav>
-		<nav class="areacamisas">
+		<nav class="areacanecas">
 			<section class="sessao-produtos">
 				<div class="container-sessao-produtos">
 					<div class="card-thumb">
 						<a href="">
-							<img src="../img/camisa01-marvel.jpg" id="card-img" alt="">
+							<img src="../img/caneca01-venom.jpg" id="card-img" alt="">
 						</a>
 						<div class="card-thumb-info">
-							<a href="">Homem de ferro</a>
+							<a href="">Venom</a>
 							<div class="card-thumb-detalhes">
 								<div class="card-thumb-precos">
 									<span>R$ 39,90</span>
@@ -249,10 +249,10 @@
 					</div>
 					<div class="card-thumb">
 						<a href="">
-							<img src="../img/camisa02-marvel.jpg" id="card-img" alt="">
+							<img src="../img/caneca02-matrix.jpg" id="card-img" alt="">
 						</a>
 						<div class="card-thumb-info">
-							<a href="">Viúva negra</a>
+							<a href="">Matrix</a>
 							<div class="card-thumb-detalhes">
 								<div class="card-thumb-precos">
 									<span>R$ 39,90</span>
@@ -265,10 +265,10 @@
 					</div>
 					<div class="card-thumb">
 						<a href="">
-							<img src="../img/camisa03-marvel.jpg" id="card-img" alt="">
+							<img src="../img/caneca03-matrix.jpg" id="card-img" alt="">
 						</a>
 						<div class="card-thumb-info">
-							<a href="">Groot</a>
+							<a href="">Matrix</a>
 							<div class="card-thumb-detalhes">
 								<div class="card-thumb-precos">
 									<span>R$ 39,90</span>
@@ -281,55 +281,7 @@
 					</div>
 					<div class="card-thumb">
 						<a href="">
-							<img src="../img/camisa04-marvel.jpg" id="card-img" alt="">
-						</a>
-						<div class="card-thumb-info">
-							<a href="">Pantera negra</a>
-							<div class="card-thumb-detalhes">
-								<div class="card-thumb-precos">
-									<span>R$ 39,90</span>
-								</div>
-								<div class="card-thumb-parcial-precos">
-									ou 3x R$ 9,90 sem juros
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="card-thumb">
-						<a href="">
-							<img src="../img/camisa05-bb.jpg" id="card-img" alt="">
-						</a>
-						<div class="card-thumb-info">
-							<a href="">Breaking bad</a>
-							<div class="card-thumb-detalhes">
-								<div class="card-thumb-precos">
-									<span>R$ 39,90</span>
-								</div>
-								<div class="card-thumb-parcial-precos">
-									ou 3x R$ 9,90 sem juros
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="card-thumb">
-						<a href="">
-							<img src="../img/camisa06-bb.jpg" id="card-img" alt="">
-						</a>
-						<div class="card-thumb-info">
-							<a href="">Breaking bad</a>
-							<div class="card-thumb-detalhes">
-								<div class="card-thumb-precos">
-									<span>R$ 39,90</span>
-								</div>
-								<div class="card-thumb-parcial-precos">
-									ou 3x R$ 9,90 sem juros
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="card-thumb">
-						<a href="">
-							<img src="../img/camisa07-stw.jpg" id="card-img" alt="">
+							<img src="../img/caneca04-stw.jpg" id="card-img" alt="">
 						</a>
 						<div class="card-thumb-info">
 							<a href="">Star wars</a>
@@ -345,10 +297,10 @@
 					</div>
 					<div class="card-thumb">
 						<a href="">
-							<img src="../img/camisa08-stw.jpg" id="card-img" alt="">
+							<img src="../img/caneca05-lula.jpg" id="card-img" alt="">
 						</a>
 						<div class="card-thumb-info">
-							<a href="">Star wars</a>
+							<a href="">Nadando em lágrimas dos bolsominions</a>
 							<div class="card-thumb-detalhes">
 								<div class="card-thumb-precos">
 									<span>R$ 39,90</span>
@@ -361,10 +313,266 @@
 					</div>
 					<div class="card-thumb">
 						<a href="">
-							<img src="../img/camisa09-rm.jpg" id="card-img" alt="">
+							<img src="../img/caneca06-lula.jpg" id="card-img" alt="">
 						</a>
 						<div class="card-thumb-info">
-							<a href="">Rick and Morty</a>
+							<a href="">O pai ta on</a>
+							<div class="card-thumb-detalhes">
+								<div class="card-thumb-precos">
+									<span>R$ 39,90</span>
+								</div>
+								<div class="card-thumb-parcial-precos">
+									ou 3x R$ 9,90 sem juros
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-thumb">
+						<a href="">
+							<img src="../img/caneca07-lula.jpg" id="card-img" alt="">
+						</a>
+						<div class="card-thumb-info">
+							<a href="">Lula</a>
+							<div class="card-thumb-detalhes">
+								<div class="card-thumb-precos">
+									<span>R$ 39,90</span>
+								</div>
+								<div class="card-thumb-parcial-precos">
+									ou 3x R$ 9,90 sem juros
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-thumb">
+						<a href="">
+							<img src="../img/caneca08-lula.jpg" id="card-img" alt="">
+						</a>
+						<div class="card-thumb-info">
+							<a href="">Lula vale a luta!</a>
+							<div class="card-thumb-detalhes">
+								<div class="card-thumb-precos">
+									<span>R$ 39,90</span>
+								</div>
+								<div class="card-thumb-parcial-precos">
+									ou 3x R$ 9,90 sem juros
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-thumb">
+						<a href="">
+							<img src="../img/caneca09-natal.jpg" id="card-img" alt="">
+						</a>
+						<div class="card-thumb-info">
+							<a href="">Feliz natal para você e sua família !</a>
+							<div class="card-thumb-detalhes">
+								<div class="card-thumb-precos">
+									<span>R$ 39,90</span>
+								</div>
+								<div class="card-thumb-parcial-precos">
+									ou 3x R$ 9,90 sem juros
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-thumb">
+						<a href="">
+							<img src="../img/caneca10-natal.jpg" id="card-img" alt="">
+						</a>
+						<div class="card-thumb-info">
+							<a href="">Feliz natal !</a>
+							<div class="card-thumb-detalhes">
+								<div class="card-thumb-precos">
+									<span>R$ 39,90</span>
+								</div>
+								<div class="card-thumb-parcial-precos">
+									ou 3x R$ 9,90 sem juros
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-thumb">
+						<a href="">
+							<img src="../img/caneca11-natal.jpg" id="card-img" alt="">
+						</a>
+						<div class="card-thumb-info">
+							<a href="">Feliz natal !</a>
+							<div class="card-thumb-detalhes">
+								<div class="card-thumb-precos">
+									<span>R$ 39,90</span>
+								</div>
+								<div class="card-thumb-parcial-precos">
+									ou 3x R$ 9,90 sem juros
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-thumb">
+						<a href="">
+							<img src="../img/caneca12-natal.jpg" id="card-img" alt="">
+						</a>
+						<div class="card-thumb-info">
+							<a href="">Feliz natal !</a>
+							<div class="card-thumb-detalhes">
+								<div class="card-thumb-precos">
+									<span>R$ 39,90</span>
+								</div>
+								<div class="card-thumb-parcial-precos">
+									ou 3x R$ 9,90 sem juros
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-thumb">
+						<a href="">
+							<img src="../img/caneca16-dc.jpg" id="card-img" alt="">
+						</a>
+						<div class="card-thumb-info">
+							<a href="">Liga da justiça</a>
+							<div class="card-thumb-detalhes">
+								<div class="card-thumb-precos">
+									<span>R$ 39,90</span>
+								</div>
+								<div class="card-thumb-parcial-precos">
+									ou 3x R$ 9,90 sem juros
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-thumb">
+						<a href="">
+							<img src="../img/caneca17-dc.jpg" id="card-img" alt="">
+						</a>
+						<div class="card-thumb-info">
+							<a href="">X-men</a>
+							<div class="card-thumb-detalhes">
+								<div class="card-thumb-precos">
+									<span>R$ 39,90</span>
+								</div>
+								<div class="card-thumb-parcial-precos">
+									ou 3x R$ 9,90 sem juros
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-thumb">
+						<a href="">
+							<img src="../img/caneca18-dc.jpg" id="card-img" alt="">
+						</a>
+						<div class="card-thumb-info">
+							<a href="">Coringa</a>
+							<div class="card-thumb-detalhes">
+								<div class="card-thumb-precos">
+									<span>R$ 39,90</span>
+								</div>
+								<div class="card-thumb-parcial-precos">
+									ou 3x R$ 9,90 sem juros
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-thumb">
+						<a href="">
+							<img src="../img/caneca19-dc.jpg" id="card-img" alt="">
+						</a>
+						<div class="card-thumb-info">
+							<a href="">Deadpool</a>
+							<div class="card-thumb-detalhes">
+								<div class="card-thumb-precos">
+									<span>R$ 39,90</span>
+								</div>
+								<div class="card-thumb-parcial-precos">
+									ou 3x R$ 9,90 sem juros
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-thumb">
+						<a href="">
+							<img src="../img/caneca20-dc.jpg" id="card-img" alt="">
+						</a>
+						<div class="card-thumb-info">
+							<a href="">Batman</a>
+							<div class="card-thumb-detalhes">
+								<div class="card-thumb-precos">
+									<span>R$ 39,90</span>
+								</div>
+								<div class="card-thumb-parcial-precos">
+									ou 3x R$ 9,90 sem juros
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-thumb">
+						<a href="">
+							<img src="../img/caneca21-dc.jpg" id="card-img" alt="">
+						</a>
+						<div class="card-thumb-info">
+							<a href="">The flash</a>
+							<div class="card-thumb-detalhes">
+								<div class="card-thumb-precos">
+									<span>R$ 39,90</span>
+								</div>
+								<div class="card-thumb-parcial-precos">
+									ou 3x R$ 9,90 sem juros
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-thumb">
+						<a href="">
+							<img src="../img/caneca22-dc.jpg" id="card-img" alt="">
+						</a>
+						<div class="card-thumb-info">
+							<a href="">Liga da justiça</a>
+							<div class="card-thumb-detalhes">
+								<div class="card-thumb-precos">
+									<span>R$ 39,90</span>
+								</div>
+								<div class="card-thumb-parcial-precos">
+									ou 3x R$ 9,90 sem juros
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-thumb">
+						<a href="">
+							<img src="../img/caneca23-dc.jpg" id="card-img" alt="">
+						</a>
+						<div class="card-thumb-info">
+							<a href="">Batman</a>
+							<div class="card-thumb-detalhes">
+								<div class="card-thumb-precos">
+									<span>R$ 39,90</span>
+								</div>
+								<div class="card-thumb-parcial-precos">
+									ou 3x R$ 9,90 sem juros
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-thumb">
+						<a href="">
+							<img src="../img/caneca24-dc.jpg" id="card-img" alt="">
+						</a>
+						<div class="card-thumb-info">
+							<a href="">Coringa</a>
+							<div class="card-thumb-detalhes">
+								<div class="card-thumb-precos">
+									<span>R$ 39,90</span>
+								</div>
+								<div class="card-thumb-parcial-precos">
+									ou 3x R$ 9,90 sem juros
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-thumb">
+						<a href="">
+							<img src="../img/caneca25-dc.jpg" id="card-img" alt="">
+						</a>
+						<div class="card-thumb-info">
+							<a href="">Batman</a>
 							<div class="card-thumb-detalhes">
 								<div class="card-thumb-precos">
 									<span>R$ 39,90</span>
