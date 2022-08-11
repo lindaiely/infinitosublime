@@ -60,14 +60,18 @@
     .topo .right{
         display: flex;
         margin: auto 45px;
-        padding: 0px 0px 0px 38rem;
+        padding: 0px 0px 0px 33rem;
     }
     .topo a{
         text-decoration: none;
         color: #fff;
         padding: 10px;
         border-radius: 5px;
+		margin: 0 6px 0 6px;
     }
+	.topo a i{
+		margin-right: 8px;
+	}
     .topo a:hover{
         text-decoration: none;
         color: #1E2335;
@@ -212,8 +216,8 @@
         <header class="topo">
 			<h1><a href="../index.php">Infinito Sublime</a></h1>
             <div class="right">
-                <a href="../login.php">MINHA CONTA</a>
-                <a href="../carrinho.php">CARRINHO</a>
+                <a href="../login.php"><i class="fa-solid fa-user"></i>MINHA CONTA</a>
+                <a href="../carrinho.php"><i class="fa-solid fa-cart-shopping"></i>CARRINHO</a>
                 <input type="search" class="buscar" id="buscarProduto" placeholder="O que você procura?">
             </div>
 		</header>

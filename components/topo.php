@@ -15,8 +15,8 @@
 		<header class="topo">
 			<h1><a href="index.php">Infinito Sublime</a></h1>
 			<div class="right">
-				<a href="login.php">MINHA CONTA</a>
-				<a href="carrinho.php">CARRINHO</a>
+				<a href="login.php"><i class="fa-solid fa-user"></i>MINHA CONTA</a>
+				<a href="carrinho.php"><i class="fa-solid fa-cart-shopping"></i>CARRINHO</a>
 				<input type="search" class="buscar" id="buscarProduto" placeholder="O que você procura?">
 			</div>
 		</header>
