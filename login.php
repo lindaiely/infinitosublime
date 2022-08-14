@@ -128,18 +128,16 @@
         margin: 0 10px;
         border-radius: 8px;
     }
-    .btn{
+    .login .btn{
         margin: 0.5rem 0 1.5rem;
         padding: 1rem;
         border: none;
         outline: none;
         color: #E6DFC5;
         border-radius: 0.3rem;
-    }
-    button{
         cursor: pointer;
     }
-    .btn-danger{
+    .login .btn-danger{
         background-color: #E25345;
     }
     .auxiliar input[type="checkbox"]{
@@ -215,17 +213,22 @@
             </div>
 		</header>
     <nav class="login">
+            <?php if(isset($_GET["m"])){ ?>
+                <div id="message">
+                    <?=base64_decode($_GET["m"])?>
+                </div>
+            <?php } ?>
         <h2>Faça seu login</h2>
-            <form action="">
+            <form action="logar.php" method="post">
                 <label for="login">E-mail</label>
                 <div class="input-wrapper input-login">
-                    <input type="text" name="login" id="login" placeholder="Email">
+                    <input type="text" name="login" id="login" placeholder="E-mail">
                 </div>
                 <label for="senha">Senha</label>
                 <div class="input-wrapper input-senha">
                     <input type="password" name="senha" id="senha" placeholder="Senha">
                 </div>
-                <button class="btn btn-danger">Entrar</button>
+                <input type="submit" value="Entrar" class="btn btn-danger">
                 <div class="auxiliar">
                     <br>
                     <a href="">Esqueceu sua senha?</a> <br><br>

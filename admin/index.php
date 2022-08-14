@@ -4,14 +4,14 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Criar conta</title>
-	<link rel="stylesheet" href="css/reset.css">
+	<title>Infinito Sublime</title>
+	<link rel="stylesheet" href="../css/reset.css">
 	<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-	<style>
-	*{
+<style>
+    *{
 	    box-sizing: border-box;
     }
     body, html{
@@ -21,7 +21,7 @@
         display: grid;
         background-color: #E6DFC5;
         grid-template:  "topo" 80px
-					    "criarconta" 1fr
+					    "perfil" 1fr
 					    "rodape" 400px / auto;
         grid-auto-rows: auto;
     }
@@ -74,79 +74,37 @@
         color: #1E2335;
         background-color: rgba(255, 255, 255, 0.938);
     }
-	.criarconta{
-		grid-area: criarconta;
-		background-color: #83B0B5;
-		margin: 2rem auto;
-        padding: 3.5rem 6rem;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        border-radius: 0.8rem;
-        width: 40%;
+	nav{
+		grid-area: perfil;
+        background-color: #E6DFC5; 
 	}
-	.criarconta h2{
-		font-size: 1.6rem;
-        color: #E6DFC5;
-        margin: 0 auto 1rem auto;
-        text-align: center;
-	}
-	.criarconta form{
-		display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        flex: 1;
-	}
-	.criarconta input{
-		border-radius: 0.3rem;
-        border: none;
-        outline: none;
-        background-color: #1E2335;
-        color: #E6DFC5;
-        margin: 0.5rem 4.5rem 1.5rem auto;
-        padding: 1rem 4rem 1rem 1.2rem;
-	}
-	#nome, #login, #senha, #confsenha{
-		width: 100%;
-	}
-    .auxiliar .btn{
-        margin: 0.5rem 0 1.5rem;
-        padding: 1rem;
-        border: none;
-        outline: none;
-        color: #E6DFC5;
-        border-radius: 0.3rem;
-        cursor: pointer;
+    .perfil{
+        width: 35%;
+        float: left;
+        background-color: #83B0B5;
     }
-    .auxiliar .btn-danger{
-        background-color: #E25345;
+    .perfil ul{
+        padding: 3rem 5rem;
     }
-    .auxiliar input[type="checkbox"]{
-        margin: 0;
-        padding: 0;
+    .perfil ul li{
+        padding: 1.3rem;
     }
-    .auxiliar{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        margin: auto;
-    }
-    .auxiliar a{
-        color: #E6DFC5;
+    .perfil ul li a{
         text-decoration: none;
-    }
-    .auxiliar p{
-        text-decoration: none;
-        margin: 10px auto 5px auto;
-    }
-    .auxiliar #aux{
-        margin: 0;
-    }
-    .input-wrapper{
-        position: relative;
         color: #E6DFC5;
-        font-weight: bold;
-        font-family: "Font Awesome 5 free";
+        padding: 10px;
+        border-radius: 8px;
+        font-size: 1.2rem;
+    }
+    .perfil ul li a:hover{
+        color: #83B0B5;
+        background-color: #E6DFC5;
+    }
+    .perfil i{
+        margin-right: 10px;
+    }
+    .dados{
+
     }
 	footer{
         grid-area: rodape;
@@ -183,47 +141,29 @@
         display: flex;
         justify-content: center;
     }
-	</style>
+</style>
 	<div class="container">
 		<header class="topo">
-			<h1><a href="index.php">Infinito Sublime</a></h1>
+			<h1><a href="../index.php">Infinito Sublime</a></h1>
             <div class="right">
                 <a href="login.php"><i class="fa-solid fa-user"></i>MINHA CONTA</a>
                 <a href="carrinho.php"><i class="fa-solid fa-cart-shopping"></i>CARRINHO</a>
                 <input type="search" class="buscar" id="buscarProduto" placeholder="O que você procura?">
             </div>
 		</header>
-		<nav class="criarconta">
+		<nav class="perfil">
+			<ul>
+                <li><a href=""><i class="fa-solid fa-user"></i>Meus dados</a></li>
+                <li><a href=""><i class="fa-solid fa-clipboard"></i>Meus pedidos</a></li>
+                <li><a href=""><i class="fa-regular fa-star"></i>Avaliação dos produtos</a></li>
+                <li><a href=""><i class="fa-regular fa-clock"></i>Lista de espera</a></li>
+                <li><a href=""><i class="fa-solid fa-rotate"></i>Trocas e devoluções</a></li>
+                <li><a href=""><i class="fa-solid fa-user-lock"></i>Alterar senha</a></li>
+                <li><a href=""><i class="fa-solid fa-right-from-bracket"></i>Sair</a></li>
+            </ul>
+            <section class="dados">
 
-            <?php if(isset($_GET["m"])){ ?>
-                <div id="message">
-                    <?=base64_decode($_GET["m"])?>
-                </div>
-            <?php } ?>
-            
-			<h2>Crie sua conta</h2>
-			<form action="usuario.php" method="post">
-				<label for="nome">Nome</label>
-					<div class="input-wrapper input-nome">
-						<input type="text" name="nome" id="nome" placeholder="Nome" required>
-					</div>
-                <label for="login">E-mail</label>
-					<div class="input-wrapper input-login">
-						<input type="text" name="login" id="login" placeholder="Email" required>
-					</div>
-                <label for="senha">Senha</label>
-					<div class="input-wrapper input-senha">
-						<input type="password" name="senha" id="senha" placeholder="Senha" required>
-					</div>
-					<div class="auxiliar">
-                        <label for="">
-                            <p><input type="checkbox">&nbsp; Gostaria de receber promoções, noticias e novidades sobre a loja</p>
-                        </label>
-                        <p>Ao criar sua conta, você concorda com os nossos <a href="">Termos de uso</a> e com a <a href="">Politica de privacidade</a></p>
-                        <input type="submit" value="Criar conta" class="btn btn-danger">
-                        <p id="aux">Já tem uma conta? <a href="login.php">Login</a></p>
-                    </div>
-            </form>
+            </section>
 		</nav>
 		<footer class="rodape">
 			<div class="institucional">
