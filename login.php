@@ -217,11 +217,11 @@
     <nav class="login">
         <h2>Faça seu login</h2>
             <form action="">
-                <label for="">E-mail</label>
+                <label for="login">E-mail</label>
                 <div class="input-wrapper input-login">
                     <input type="text" name="login" id="login" placeholder="Email">
                 </div>
-                <label for="">Senha</label>
+                <label for="senha">Senha</label>
                 <div class="input-wrapper input-senha">
                     <input type="password" name="senha" id="senha" placeholder="Senha">
                 </div>

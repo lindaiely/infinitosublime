@@ -109,18 +109,16 @@
 	#nome, #login, #senha, #confsenha{
 		width: 100%;
 	}
-    .btn{
+    .auxiliar .btn{
         margin: 0.5rem 0 1.5rem;
         padding: 1rem;
         border: none;
         outline: none;
         color: #E6DFC5;
         border-radius: 0.3rem;
-    }
-    button{
         cursor: pointer;
     }
-    .btn-danger{
+    .auxiliar .btn-danger{
         background-color: #E25345;
     }
     .auxiliar input[type="checkbox"]{
@@ -196,29 +194,32 @@
             </div>
 		</header>
 		<nav class="criarconta">
+
+            <?php if(isset($_GET["m"])){ ?>
+                <div id="message">
+                    <?=base64_decode($_GET["m"])?>
+                </div>
+            <?php } ?>
 			<h2>Crie sua conta</h2>
-			<form action="">
-				<label for="">Nome</label>
+			<form action="usuario.php" method="post">
+				<label for="nome">Nome</label>
 					<div class="input-wrapper input-nome">
-						<input type="text" name="nome" id="nome" placeholder="Nome">
+						<input type="text" name="nome" id="nome" placeholder="Nome" required>
 					</div>
-                <label for="">E-mail</label>
+                <label for="login">E-mail</label>
 					<div class="input-wrapper input-login">
-						<input type="text" name="login" id="login" placeholder="Email">
+						<input type="text" name="login" id="login" placeholder="Email" required>
 					</div>
-                <label for="">Senha</label>
+                <label for="senha">Senha</label>
 					<div class="input-wrapper input-senha">
-						<input type="password" name="senha" id="senha" placeholder="Senha">
-					</div>
-					<div class="input-wrapper input-confsenha">
-						<input type="password" name="confsenha" id="confsenha" placeholder="Confirme sua senha">
+						<input type="password" name="senha" id="senha" placeholder="Senha" required>
 					</div>
 					<div class="auxiliar">
                         <label for="">
                             <p><input type="checkbox">&nbsp; Gostaria de receber promoções, noticias e novidades sobre a loja</p>
                         </label>
                         <p>Ao criar sua conta, você concorda com os nossos <a href="">Termos de uso</a> e com a <a href="">Politica de privacidade</a></p>
-                        <button class="btn btn-danger"><a href="perfil.php">Criar conta</a></button>
+                        <input type="submit" value="Criar conta" class="btn btn-danger">
                         <p id="aux">Já tem uma conta? <a href="login.php">Login</a></p>
                     </div>
             </form>
