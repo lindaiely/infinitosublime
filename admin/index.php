@@ -1,3 +1,19 @@
+<?php 
+session_start();
+
+$basePath = $_SERVER["DOCUMENT_ROOT"];
+require_once $basePath . "/infinitosublime/util/funcao.php";
+
+$baseUrl = url() . "/infinitosublime";
+
+if (!isset($_SESSION["id"]) || !isset($_SESSION["nome"]) || !isset($_SESSION["login"])) {
+    header("location: " . $baseUrl);
+    exit;
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -20,10 +36,11 @@
     .container{
         display: grid;
         background-color: #E6DFC5;
-        grid-template:  "topo" 80px
-					    "perfil" 1fr
-					    "rodape" 400px / auto;
+        grid-template:  "topo topo" 80px
+					    "perfil nav" 1fr
+					    "rodape rodape" 400px / auto 850px;
         grid-auto-rows: auto;
+        grid-gap: 3px;
     }
     header{
         grid-area: topo;
@@ -76,11 +93,10 @@
     }
 	nav{
 		grid-area: perfil;
-        background-color: #E6DFC5; 
+        background-color: #E6DFC5;
 	}
     .perfil{
-        width: 35%;
-        float: left;
+        width: 100%;
         background-color: #83B0B5;
     }
     .perfil ul{
@@ -103,8 +119,8 @@
     .perfil i{
         margin-right: 10px;
     }
-    .dados{
-
+    section{
+        grid-area: nav;
     }
 	footer{
         grid-area: rodape;
@@ -144,27 +160,29 @@
 </style>
 	<div class="container">
 		<header class="topo">
-			<h1><a href="../index.php">Infinito Sublime</a></h1>
+			<h1><a href="<?=$baseUrl?>/index.php">Infinito Sublime</a></h1>
             <div class="right">
-                <a href="login.php"><i class="fa-solid fa-user"></i>MINHA CONTA</a>
+                <a href="login.php"><i class="fa-solid fa-user"></i>Olá, <?=$_SESSION["nome"]?></a>
                 <a href="carrinho.php"><i class="fa-solid fa-cart-shopping"></i>CARRINHO</a>
                 <input type="search" class="buscar" id="buscarProduto" placeholder="O que você procura?">
             </div>
 		</header>
 		<nav class="perfil">
 			<ul>
-                <li><a href=""><i class="fa-solid fa-user"></i>Meus dados</a></li>
-                <li><a href=""><i class="fa-solid fa-clipboard"></i>Meus pedidos</a></li>
-                <li><a href=""><i class="fa-regular fa-star"></i>Avaliação dos produtos</a></li>
-                <li><a href=""><i class="fa-regular fa-clock"></i>Lista de espera</a></li>
-                <li><a href=""><i class="fa-solid fa-rotate"></i>Trocas e devoluções</a></li>
-                <li><a href=""><i class="fa-solid fa-user-lock"></i>Alterar senha</a></li>
-                <li><a href=""><i class="fa-solid fa-right-from-bracket"></i>Sair</a></li>
+                <li><a href="<?=$baseUrl?>/admin/meus-dados.php"><i class="fa-solid fa-user"></i>Meus dados</a></li>
+                <li><a href="<?=$baseUrl?>/admin/meus-pedidos.php"><i class="fa-solid fa-clipboard"></i>Meus pedidos</a></li>
+                <li><a href="<?=$baseUrl?>/admin/avaliacao.php"><i class="fa-regular fa-star"></i>Avaliação dos produtos</a></li>
+                <li><a href="<?=$baseUrl?>/admin/lista-espera.php"><i class="fa-regular fa-clock"></i>Lista de espera</a></li>
+                <li><a href="<?=$baseUrl?>/admin/trocas.php"><i class="fa-solid fa-rotate"></i>Trocas e devoluções</a></li>
+                <li><a href="<?=$baseUrl?>/admin/alterar-senha.php"><i class="fa-solid fa-user-lock"></i>Alterar senha</a></li>
+                <li><a href="<?=$baseUrl?>/admin/sair.php"><i class="fa-solid fa-right-from-bracket"></i>Sair</a></li>
             </ul>
-            <section class="dados">
-
-            </section>
 		</nav>
+            <section class="dados">
+                <p>
+                    Seja bem vindo <?=$_SESSION["nome"]?>
+                </p>
+            </section>
 		<footer class="rodape">
 			<div class="institucional">
 				<p>INSTITUCIONAL</p>

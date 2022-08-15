@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 require_once 'db/conexao.php';
 
@@ -18,5 +19,11 @@ if(mysqli_num_rows($resultSetUsuario) == 0){
 
 //pegar os dados do usuario e redirecionar ele
 $row = mysqli_fetch_assoc($resultSetUsuario);
+
+$_SESSION["id"] = $row["id"];
+$_SESSION["nome"] = $row["nome"];
+$_SESSION["login"] = $row["login"];
+
+
 mysqli_close($conn);
 header("location: admin/");
