@@ -38,7 +38,8 @@ if($valido){
 	$sql = "INSERT INTO tbcliente VALUES (NULL, '$nome', '$login', '$senha')";
 
 	if(mysqli_query($conn, $sql))
-		$msg = "Dados cadastrados com sucesso";
+		//$msg = "Dados cadastrados com sucesso";
+		$msg = 'Dados cadastrados com Sucesso!';
 	else
 		$msg = "Ocorreu um erro";
 }
@@ -48,3 +49,7 @@ mysqli_close($conn);
 
 //bate nessa pagina, seta uma mensagem e volta pra pagina de cadastrar com a mensagem
 header("location: criar-conta.php?m=". base64_encode($msg));
+
+//echo "<script>alert('Dados cadastrados com Sucesso!');</script>";
+//header("location: criar-conta.php");
+//echo "window.location='criar-conta.php';";

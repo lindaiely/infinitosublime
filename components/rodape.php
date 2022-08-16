@@ -24,9 +24,9 @@
 			<div class="atendimento">
 				<p>ATENDIMENTO</p>
 				<ul>
-					<li><a href="">Telefone: </a></li>
-					<li><a href="">Horários de funcionamento</a></li>
-					<li><a href="">Email:</a></li>
+					<li><a href=""><i class="fa-solid fa-phone"></i>Telefone: </a></li>
+					<li><a href=""><i class="fa-solid fa-clock"></i>Horários de funcionamento</a></li>
+					<li><a href=""><i class="fa-solid fa-envelope"></i>Email:</a></li>
 				</ul>
 			</div>
 			<div class="pagamento">

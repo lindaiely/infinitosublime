@@ -195,12 +195,12 @@
 		</header>
 		<nav class="criarconta">
 
-            <?php if(isset($_GET["m"])){ ?>
-                <div id="message">
-                    <?=base64_decode($_GET["m"])?>
-                </div>
-            <?php } ?>
-            
+        <?php if(isset($_GET["m"])){ ?>
+            <div id="message">
+                <?=base64_decode($_GET["m"])?>
+            </div>
+        <?php } ?>
+
 			<h2>Crie sua conta</h2>
 			<form action="usuario.php" method="post">
 				<label for="nome">Nome</label>
