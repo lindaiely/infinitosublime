@@ -24,9 +24,9 @@
 			<div class="atendimento">
 				<p>ATENDIMENTO</p>
 				<ul>
-					<li><a href=""><i class="fa-solid fa-phone"></i>Telefone: </a></li>
-					<li><a href=""><i class="fa-solid fa-clock"></i>Horários de funcionamento</a></li>
-					<li><a href=""><i class="fa-solid fa-envelope"></i>Email:</a></li>
+					<li><i class="fa-solid fa-phone"></i>(xx) xxxx-xxxx</li>
+					<li><i class="fa-solid fa-clock"></i>09:00 às 17:30</li>
+					<li><i class="fa-solid fa-envelope"></i>infinitosublime@gmail.com</li>
 				</ul>
 			</div>
 			<div class="pagamento">

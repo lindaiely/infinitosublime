@@ -95,12 +95,12 @@
 	}
 	.menu ul li a{
 		text-decoration: none;
-		color: rgba(255, 255, 255, 0.938);
+		color: #000;
 		padding: 10px;
 		border-radius: 8px;
 	}
 	.menu ul li a:hover{
-		color: #83B0B5;
+		color: #000;
 		background-color: rgba(255, 255, 255, 0.938);
 	}
 	.areacanecas{
@@ -193,6 +193,7 @@
     }
     .rodape ul li{
         margin: 10px 0;
+		color: #E6DFC5;
     }
     .rodape ul li a{
         text-decoration: none;
@@ -203,6 +204,9 @@
         margin: 3px;
         font-size: 2rem;
     }
+	.atendimento i{
+		margin-right: 6px;
+	}
     .break{
         flex-basis: 100%;
         height: 0;
@@ -615,9 +619,9 @@
 			<div class="atendimento">
 				<p>ATENDIMENTO</p>
 				<ul>
-					<li><a href="">Telefone: </a></li>
-					<li><a href="">Horários de funcionamento</a></li>
-					<li><a href="">Email:</a></li>
+					<li><i class="fa-solid fa-phone"></i>(xx) xxxx-xxxx</li>
+					<li><i class="fa-solid fa-clock"></i>09:00 às 17:30</li>
+					<li><i class="fa-solid fa-envelope"></i>infinitosublime@gmail.com</li>
 				</ul>
 			</div>
 			<div class="pagamento">

@@ -107,13 +107,13 @@ if (!isset($_SESSION["id"]) || !isset($_SESSION["nome"]) || !isset($_SESSION["lo
     }
     .perfil ul li a{
         text-decoration: none;
-        color: #E6DFC5;
+        color: #000;
         padding: 10px;
         border-radius: 8px;
         font-size: 1.2rem;
     }
     .perfil ul li a:hover{
-        color: #83B0B5;
+        color: #000;
         background-color: #E6DFC5;
     }
     .perfil i{
@@ -139,6 +139,7 @@ if (!isset($_SESSION["id"]) || !isset($_SESSION["nome"]) || !isset($_SESSION["lo
     }
     .rodape ul li{
         margin: 10px 0;
+        color: #E6DFC5;
     }
     .rodape ul li a{
         text-decoration: none;
@@ -148,6 +149,9 @@ if (!isset($_SESSION["id"]) || !isset($_SESSION["nome"]) || !isset($_SESSION["lo
         display: inline;
         margin: 3px;
         font-size: 2rem;
+    }
+    .atendimento i{
+        margin-right: 6px;
     }
     .break{
         flex-basis: 100%;
@@ -200,9 +204,9 @@ if (!isset($_SESSION["id"]) || !isset($_SESSION["nome"]) || !isset($_SESSION["lo
 			<div class="atendimento">
 				<p>ATENDIMENTO</p>
 				<ul>
-					<li><a href="">Telefone: </a></li>
-					<li><a href="">Horários de funcionamento</a></li>
-					<li><a href="">Email:</a></li>
+                    <li><i class="fa-solid fa-phone"></i>(xx) xxxx-xxxx</li>
+					<li><i class="fa-solid fa-clock"></i>09:00 às 17:30</li>
+					<li><i class="fa-solid fa-envelope"></i>infinitosublime@gmail.com</li>
 				</ul>
 			</div>
 			<div class="pagamento">

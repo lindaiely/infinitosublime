@@ -82,12 +82,12 @@ nav{
 }
 .menu ul li a{
 	text-decoration: none;
-	color: rgba(255, 255, 255, 0.938);
+	color: #000;
 	padding: 10px;
 	border-radius: 8px;
 }
 .menu ul li a:hover{
-	color: #83B0B5;
+	color: #000;
 	background-color: rgba(255, 255, 255, 0.938);
 }
 .container-sessao-produtos{
@@ -201,6 +201,7 @@ footer{
 }
 .rodape ul li{
 	margin: 10px 0;
+	color: #E6DFC5;
 }
 .rodape ul li a{
 	text-decoration: none;
