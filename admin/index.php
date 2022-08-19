@@ -121,6 +121,68 @@ if (!isset($_SESSION["id"]) || !isset($_SESSION["nome"]) || !isset($_SESSION["lo
     }
     section{
         grid-area: nav;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .pessoais{
+        margin: auto 0 auto 5rem;
+    }
+    .pessoais h2{
+        font-size: 1.4rem;
+        margin: 0 auto 1.5rem auto;
+    }
+    .endereco h2{
+        font-size: 1.4rem;
+        margin: 0 auto 1rem auto;
+    }
+    .pessoais form, .endereco form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex: 1;
+    }
+    .pessoais input{
+        border-radius: 0.3rem;
+        border: none;
+        outline: none;
+        margin: 0.5rem 4rem 1rem auto;
+        padding: 0.5rem 4rem 0.5rem 0.5rem;
+        width: 100%;
+    }
+    .pessoais .btn{
+        padding: 0.6rem 2rem;
+        margin: auto;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    .endereco{
+        margin: auto;
+    }
+    .endereco a{
+        font-size: 0.8rem;
+        color: #000;
+    }
+    .endereco input{
+        border-radius: 0.3rem;
+        border: none;
+        outline: none;
+        margin: 0.5rem 4rem 1rem auto;
+        padding: 0.5rem 4rem 0.5rem 0.5rem;
+        width: 100%;
+    }
+    .endereco .cep-aux input{
+        margin-bottom: 4px;
+    }
+    .endereco .endereco-aux input{
+        margin-top: 16px;
+    }
+    .endereco .btn{
+        padding: 0.6rem 2rem;
+        margin: auto;
+        border: none;
+        outline: none;
+        cursor: pointer;
     }
 	footer{
         grid-area: rodape;
@@ -173,7 +235,7 @@ if (!isset($_SESSION["id"]) || !isset($_SESSION["nome"]) || !isset($_SESSION["lo
 		</header>
 		<nav class="perfil">
 			<ul>
-                <li><a href="<?=$baseUrl?>/admin/meus-dados.php"><i class="fa-solid fa-user"></i>Meus dados</a></li>
+                <li><a href="<?=$baseUrl?>/admin"><i class="fa-solid fa-user"></i>Meus dados</a></li>
                 <li><a href="<?=$baseUrl?>/admin/meus-pedidos.php"><i class="fa-solid fa-clipboard"></i>Meus pedidos</a></li>
                 <li><a href="<?=$baseUrl?>/admin/avaliacao.php"><i class="fa-regular fa-star"></i>Avaliação dos produtos</a></li>
                 <li><a href="<?=$baseUrl?>/admin/lista-espera.php"><i class="fa-regular fa-clock"></i>Lista de espera</a></li>
@@ -183,9 +245,61 @@ if (!isset($_SESSION["id"]) || !isset($_SESSION["nome"]) || !isset($_SESSION["lo
             </ul>
 		</nav>
             <section class="dados">
-                <p>
-                    Seja bem vindo <?=$_SESSION["nome"]?>
-                </p>
+                <div class="pessoais">
+                    <h2>Dados pessoais</h2>
+                    <form action="">
+                        <label for="nome">Nome completo</label>
+                        <div>
+                            <input type="text" name="nome" id="nome" placeholder="">
+                        </div>
+                        <label for="email">E-mail</label>
+                        <div>
+                            <input type="text" name="email" id="email" placeholder="">
+                        </div>
+                        <label for="cpf">CPF</label>
+                        <div>
+                            <input type="text" name="cpf" id="cpf" placeholder="">
+                        </div>
+                        <label for="dtnascimento">Data de nascimento</label>
+                        <div>
+                            <input type="date" name="dtnascimento" id="dtnascimento" placeholder="">
+                        </div>
+                        <label for="telefone">Telefone</label>
+                        <div>
+                            <input type="text" name="telefone" id="telefone" placeholder="">
+                        </div>
+                        <input type="button" value="Salvar alterações" class="btn">
+                    </form>
+                </div>
+                <div class="endereco">
+                    <h2>Endereço de entrega</h2>
+                    <form action="">
+                        <div class="cep-aux">
+                            <input type="text" name="cep" id="cep" placeholder="CEP">
+                            <br>
+                            <a href="">Não sei meu cep</a>
+                        </div>
+                        <div class="endereco-aux">
+                            <input type="text" name="endereco" id="endereco" placeholder="Endereço(rua, avenida, quadra, lote)">
+                        </div>
+                        <div>
+                            <input type="text" name="numero" id="numero" placeholder="Informe o número">
+                        </div>
+                        <div>
+                            <input type="text" name="comp" id="comp" placeholder="Complemento">
+                        </div>
+                        <div>
+                            <input type="text" name="bairro" id="bairro" placeholder="Bairro">
+                        </div>
+                        <div>
+                            <input type="text" name="cidade" id="cidade" placeholder="Cidade">
+                        </div>
+                        <div>
+                            <input type="text" name="estado" id="estado" placeholder="Estado">
+                        </div>
+                        <input type="button" value="Salvar alterações" class="btn">
+                    </form>
+                </div>
             </section>
 		<footer class="rodape">
 			<div class="institucional">
